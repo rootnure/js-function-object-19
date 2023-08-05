@@ -12,6 +12,14 @@ const penCount = shoppingCart.pen;
 // use /* BRACKET NOTATION */ to get the property value when you know the specific property name
 const penCount2 = shoppingCart['pen'];
 
+/* Get all the property names from an object in array format */
+const properties = Object.keys(shoppingCart);
+// console.log(properties); // [ 'books', 'sunglass', 'keyboard', 'mouse', 'pen' ]
+
+/* Get all the values from an object in array format */
+const values = Object.values(shoppingCart);
+// console.log(values); // [ 3, 1, 5, 1, 25 ]
+
 const keyName = 'books';
 const value = shoppingCart[keyName];
 // console.log(value); // 1
